@@ -20,3 +20,10 @@ w powershellu:
 
 
 4) Omówienie czasowników HTTP i zasady działania kontrolerów
+
+5) Rozbudujemy API o nowy kontroler - ProductController
+ - dodanie nowego kontrolera
+ - dodanie nowego modelu (product) w projekcie wspólnym (shared)
+ - dodanie ServiceReponse w projekcie wspólnym (shared)
+ - dodanie nowego serwisu (ProductService) w projekcie API
+ - dodanie DataSeeder w nowym projekcie API

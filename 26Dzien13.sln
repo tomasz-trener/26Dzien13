@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Podsumowanie.txt = Podsumowanie.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06Shop.Shared", "P06Shop.Shared\P06Shop.Shared.csproj", "{C0A97591-11A8-44ED-960E-B42135F27B73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07Shop.DataSeeder", "P07Shop.DataSeeder\P07Shop.DataSeeder.csproj", "{06ABC753-6476-4E16-A558-DE133E5C4E2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{D2A42270-A66B-4FD2-AA2A-AD9DBC879263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2A42270-A66B-4FD2-AA2A-AD9DBC879263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2A42270-A66B-4FD2-AA2A-AD9DBC879263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A97591-11A8-44ED-960E-B42135F27B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A97591-11A8-44ED-960E-B42135F27B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A97591-11A8-44ED-960E-B42135F27B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A97591-11A8-44ED-960E-B42135F27B73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06ABC753-6476-4E16-A558-DE133E5C4E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06ABC753-6476-4E16-A558-DE133E5C4E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06ABC753-6476-4E16-A558-DE133E5C4E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06ABC753-6476-4E16-A558-DE133E5C4E2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -152,7 +152,7 @@ namespace P05Shop.API.Controllers
   //      [HttpGet("MyDynamicMethodName")]
         public IActionResult MyDynamicMethodName()
         {
-            return Ok("Method incoked");
+            return Ok("Method invoked");
         }
     }
 }
