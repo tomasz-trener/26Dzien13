@@ -1,4 +1,5 @@
 ﻿using P06Shop.Shared;
+using P07Shop.DataSeeder;
 
 namespace P05Shop.API.Services
 {
@@ -10,10 +11,9 @@ namespace P05Shop.API.Services
 
             try
             {
-                result.Data= new List<Product>()
-                {
-                    new Product() { Id=1, Title="Product 1", Description="Description 1" },
-                };
+                result.Data = ProductDataSeeder.GenerateProductData();
+                result.Success = true;
+                result.Message = "Data retrieved successfully";
             }
             catch (Exception ex)
             {
