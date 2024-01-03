@@ -32,7 +32,8 @@ namespace P04WeatherForecastWPF.Client.Services
                 .AddJsonFile("appsettings.json");
 
             var configuration = builder.Build();
-            language = configuration["default_language"];
+            // language = configuration["default_language"];
+            language = configuration["AppSettings:DefaultLanguage"];
             api_key = configuration["api_key"];
         }
 

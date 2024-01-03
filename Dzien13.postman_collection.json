@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "f53897a7-3bf7-456a-bcbc-a2e85e2da61d",
+		"name": "Dzien13",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25831134"
+	},
+	"item": [
+		{
+			"name": "Test WeatherForecast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7061/WeatherForecast"
+			},
+			"response": []
+		},
+		{
+			"name": "Dodanie nowego miasta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"warszawa\",\r\n  \"country\": \"poland\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7061/api/WeatherForecast",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7061",
+					"path": [
+						"api",
+						"WeatherForecast"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "warszawa",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "poland",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Testowanie zwracanego Location",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Pobieranie produktów",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
