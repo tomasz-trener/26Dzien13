@@ -23,7 +23,8 @@ w powershellu:
 
 5) Rozbudujemy API o nowy kontroler - ProductController
  - dodanie nowego kontrolera
- - dodanie nowego modelu (product) w projekcie wspólnym (shared)
+ - dodanie nowego modelu (Product) w projekcie wspólnym (shared)
  - dodanie ServiceReponse w projekcie wspólnym (shared)
  - dodanie nowego serwisu (ProductService) w projekcie API
  - dodanie DataSeeder w nowym projekcie API
+ - wdrożenie mechanizmu DI (dependency injection) poprzez stworzenie Intrefejsu a potem konfiguracje w Program.cs

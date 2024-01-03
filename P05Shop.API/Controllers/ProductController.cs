@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using P06Shop.Shared;
+using P06Shop.Shared.Services.ProductService;
 
 namespace P05Shop.API.Controllers
 {
@@ -7,7 +8,14 @@ namespace P05Shop.API.Controllers
     [ApiController]
     public class ProductController : Controller
     {
-       public async Task<ActionResult<List<Product>>> GetProducts()
+        private readonly IProductService _productService; // wstrzyknięcie zależności
+        public ProductController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
+
+        public async Task<ActionResult<List<Product>>> GetProducts()
        {
             //try
             //{
@@ -20,7 +28,7 @@ namespace P05Shop.API.Controllers
             //                           $"Error retrieving data from the database {ex.Message}");
             //}
 
-            var result = new ServiceReponse<List<Product>>();
+            var result = await _productService.GetProductsAsync();
 
             if(result.Success)
             {
