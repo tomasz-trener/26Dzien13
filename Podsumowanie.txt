@@ -28,3 +28,7 @@ w powershellu:
  - dodanie nowego serwisu (ProductService) w projekcie API
  - dodanie DataSeeder w nowym projekcie API
  - wdrożenie mechanizmu DI (dependency injection) poprzez stworzenie Intrefejsu a potem konfiguracje w Program.cs
+
+ 6) Rozbudowa aplikacji klienckiej tak aby korzystała z nowego API
+	- dodanie serwisu ProductService
+	- refaktoryzacja App.xaml.cs 
