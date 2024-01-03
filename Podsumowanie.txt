@@ -19,7 +19,7 @@ w powershellu:
 	Invoke-WebRequest -Method GET -Uri "https://localhost:7061/WeatherForecast" -Headers @{"accept" = "text/plain"}
 
 
-4) Omówienie czasowników HTTP i zasady działania kontrolerów
+4) Omówienie czasowników HTTP i zasady działania kontrolerów na przykładzie WeatherForecastController
 
 5) Rozbudujemy API o nowy kontroler - ProductController
  - dodanie nowego kontrolera
@@ -37,3 +37,11 @@ w powershellu:
 	- Dodanie view modelu ProductViewModel
 	- Dodanie widoku ShopProductsView
 	- Otworzenie widoku ShopProductsView z poziomu MainViewModel
+
+7) Uruchomienie jednocześnie API oraz klienta 
+ - api uruchamiamy z konsoli (dotnet run). Pamietać, że w launchSettings dotnet run uruchamia pierwszy projekt w kolejności
+    poleceniem dotent run --launch-profile "nazwaProfilu" możemy uruchomić inny profil 
+
+8) Poprawnie w AccuWeatherService dostepu do DefaultLanguage z poziomu AppSettings
+9) Zapisalismy z postamana kolekcje requestów do pliku .json
+ - postman potrafi sam wygenerować kod w c# na podstawie kolekcji requestów
