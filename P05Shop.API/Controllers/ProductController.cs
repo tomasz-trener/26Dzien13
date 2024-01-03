@@ -14,7 +14,7 @@ namespace P05Shop.API.Controllers
             _productService = productService;
         }
 
-
+        [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
        {
             //try
