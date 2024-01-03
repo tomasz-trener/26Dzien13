@@ -31,4 +31,9 @@ w powershellu:
 
  6) Rozbudowa aplikacji klienckiej tak aby korzystała z nowego API
 	- dodanie serwisu ProductService
-	- refaktoryzacja App.xaml.cs 
+	- refaktoryzacja App.xaml.cs:
+		- Konfiguracja HttpClient z poziomu app.xaml.cs
+		- Dostep do AppSetings z poziomu app.xaml.cs
+	- Dodanie view modelu ProductViewModel
+	- Dodanie widoku ShopProductsView
+	- Otworzenie widoku ShopProductsView z poziomu MainViewModel

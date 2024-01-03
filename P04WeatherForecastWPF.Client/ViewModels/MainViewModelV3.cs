@@ -96,6 +96,15 @@ namespace P04WeatherForecastWPF.Client.ViewModels
             window.Show();
         }
 
+        [RelayCommand]
+        public void OpenShowWindow()
+        {
+            ShopProductsView shopProductsView =  _serviceProvider.GetService<ShopProductsView>();
+            ProductsViewModel productsViewModel = _serviceProvider.GetService<ProductsViewModel>();
+
+            shopProductsView.Show();
+            productsViewModel.GetProductsAsync();
+        }
 
 
     }

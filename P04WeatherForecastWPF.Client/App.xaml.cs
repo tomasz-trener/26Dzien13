@@ -49,6 +49,7 @@ namespace P04WeatherForecastWPF.Client
             //potrzebujemy pakietu Microsoft.Extensions.Options.ConfigurationExtensions
             var appSettingsSection = _configuration.GetSection(nameof(AppSettings));
             var settings = appSettingsSection.Get<AppSettings>();
+            services.Configure<AppSettings>(appSettingsSection); // zarejestrowanie AppSettings w kontenerze DI
             return settings;
         }
 
@@ -57,6 +58,7 @@ namespace P04WeatherForecastWPF.Client
             // tutaj konfigurujemy viewmodele
             services.AddSingleton<IMainViewModel, MainViewModelV3>();
             services.AddSingleton<SecondWindowViewModel>();
+            services.AddSingleton<ProductsViewModel>();
         }
 
         private void ConfigureAppServices(IServiceCollection services)
@@ -72,6 +74,7 @@ namespace P04WeatherForecastWPF.Client
             // tutaj konfigurujemy widoki
             services.AddTransient<MainWindow>();
             services.AddTransient<SecondWindow>();
+            services.AddTransient<ShopProductsView>();
         }
 
         private void ConfigureHttpClients(IServiceCollection services, AppSettings appSettings)
