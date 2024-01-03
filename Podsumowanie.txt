@@ -6,8 +6,9 @@
 	- w curlu - mini program do testowania api w konsoli
 	- w postmanie - rozbudowany program do testowania api
 	- w przeglądarce
+	- w visual studio używając plików .http
 
-np: curl
+w curl:
 w konsoli wpisujemy:
 	curl -X "GET" "https://localhost:7061/WeatherForecast" -H "accept: text/plain"
 
@@ -17,3 +18,5 @@ w konsoli wpisujemy:
 w powershellu:
 	Invoke-WebRequest -Method GET -Uri "https://localhost:7061/WeatherForecast" -Headers @{"accept" = "text/plain"}
 
+
+4) Omówienie czasowników HTTP i zasady działania kontrolerów
