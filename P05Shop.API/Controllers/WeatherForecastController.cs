@@ -135,5 +135,24 @@ namespace P05Shop.API.Controllers
             // klient bedzie wiedział gdzie jest zapisany nowy zasób
             // w nagłówku odpowiedzi jest zapisany adres nowego zasobu w Location
         }
+
+        //https://localhost:7061/api/WeatherForecast/GetCity/1
+        [HttpGet("GetCity/{id}")]
+        public IActionResult GetCity([FromRoute] int id)
+        {
+            // pobranie z bazy danych
+            CityDTO cityDTO = new CityDTO() { Name = "Krakow", Country = "Poland" };
+            return Ok(cityDTO);
+        }
+
+        //Dynamiczne odowlanie się do nazwu metody
+
+        //https://localhost:7061/api/WeatherForecast/MyDynamicMethodName
+        [HttpGet("[action]")]
+  //      [HttpGet("MyDynamicMethodName")]
+        public IActionResult MyDynamicMethodName()
+        {
+            return Ok("Method incoked");
+        }
     }
 }
