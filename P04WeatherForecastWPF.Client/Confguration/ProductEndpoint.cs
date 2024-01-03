@@ -8,6 +8,7 @@ namespace P04WeatherForecastWPF.Client.Confguration
 {
     internal class ProductEndpoint
     {
+        public string BaseUrl { get; set; }
         public string GetProducts { get; set; }
     }
 }

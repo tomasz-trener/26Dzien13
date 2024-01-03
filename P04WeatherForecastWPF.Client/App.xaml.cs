@@ -80,7 +80,7 @@ namespace P04WeatherForecastWPF.Client
 
             var urliBulder = new UriBuilder(appSettings.BaseApiUrl)
             {
-                Path = appSettings.ProductEndpoint.GetProducts
+                Path = appSettings.ProductEndpoint.BaseUrl
             };
 
             //żeby skonfigurować HttpClienta, musimy dodać pakiet Microsoft.Extensions.Http
