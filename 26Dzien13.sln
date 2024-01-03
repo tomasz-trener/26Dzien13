@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04WeatherForecastWPF.Client", "P04WeatherForecastWPF.Client\P04WeatherForecastWPF.Client.csproj", "{5705D7C9-8DAE-4491-B52D-101CCDFE6938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05Shop.API", "P05Shop.API\P05Shop.API.csproj", "{D2A42270-A66B-4FD2-AA2A-AD9DBC879263}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9691C56-EDA7-44F3-BACF-571247AC422A}"
+	ProjectSection(SolutionItems) = preProject
+		Podsumowanie.txt = Podsumowanie.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5705D7C9-8DAE-4491-B52D-101CCDFE6938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5705D7C9-8DAE-4491-B52D-101CCDFE6938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5705D7C9-8DAE-4491-B52D-101CCDFE6938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5705D7C9-8DAE-4491-B52D-101CCDFE6938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A42270-A66B-4FD2-AA2A-AD9DBC879263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A42270-A66B-4FD2-AA2A-AD9DBC879263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A42270-A66B-4FD2-AA2A-AD9DBC879263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A42270-A66B-4FD2-AA2A-AD9DBC879263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE66CABC-973D-4146-9F3C-DD60CF39FEDB}
+	EndGlobalSection
+EndGlobal
